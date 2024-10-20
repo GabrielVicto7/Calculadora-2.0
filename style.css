@@ -26,6 +26,10 @@ body{
     font-size: 33px;
     color: orange;
     padding-bottom: 10px;
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
 }
 
 @font-face {
@@ -68,6 +72,10 @@ body{
     background-color: rgba(0, 0, 0, 0.721);
     border: 0;
     transition: 0.1s;
+    user-select: none;
+    -webkit-user-select: none;
+     -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #DivBotões{
