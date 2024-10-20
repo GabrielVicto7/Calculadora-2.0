@@ -13,15 +13,33 @@ function Btn_7(){
 
 function Btn_4(){
   var PainelInput = document.getElementById("InputVAL")
+  Btn = document.getElementById("Btn_4")
+  Btn.addEventListener("click", function() {
+    if (isNaN(parseFloat(PainelInput.value))) { 
+        PainelInput.value = "";
+    }
+  })
   PainelInput.value += 4
 }
 
 function Btn_1(){
+  Btn = document.getElementById("Btn_1")
+  Btn.addEventListener("click", function() {
+    if (isNaN(parseFloat(PainelInput.value))) { 
+        PainelInput.value = "";
+    }
+  })
   var PainelInput = document.getElementById("InputVAL")
   PainelInput.value += 1
 }
 
 function DeleteONE(){
+  Btn = document.getElementById("DeleteONE")
+  Btn.addEventListener("click", function() {
+    if (isNaN(parseFloat(PainelInput.value))) { 
+        PainelInput.value = "";
+    }
+  })
   var PainelInput = document.getElementById("InputVAL")
   var ValorAtual = PainelInput.value;
   var IndiceDEL = PainelInput.value.length - 1
@@ -122,6 +140,25 @@ function Igual(){
       ValorIN = ValorIN.substring(0, i) + "/" + ValorIN.substring(i + 1);
     }
   }
-  var ValorRes = math.evaluate(ValorIN)
-  PainelInput.value = ValorRes
+
+  try {
+    var ValorRes = math.evaluate(ValorIN)
+    PainelInput.value = ValorRes
+} catch (error) {
+  PainelInput.style.textAlign = "center"
+  PainelInput.value = ("Sintaxe incorreta! ❌")
+  var Btns = document.querySelectorAll(".Buttons")
+  Btns.forEach(function(btn) {
+    btn.disabled = true;
+  });
+
+  setTimeout(function() {
+    PainelInput.style.textAlign = "left"
+    PainelInput.value = ("")
+    Btns.forEach(function(btn) {
+      btn.disabled = false;
+  });
+}, 1500);
+}
+  
 }

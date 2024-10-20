@@ -9,29 +9,31 @@
 </head>
 <body>
     <div id="CalculadoraDIV">
+      <h1 id="txt">Calculadora</h1>
+      <div class="Linha" id="LinhaId"></div>
       <div id="InputDIV"><input type="text" id="InputVAL" disabled></div>
-      <div id="Linha"></div>
+      <div class="Linha"></div>
       <div id="DivBotões">
-        <button class="Buttons" onclick="DeleteALL()">C</button>
-        <button class="Buttons" onclick="Parênteses()">( )</button>
-        <button class="Buttons" onclick="Porcentagem()">%</button>
-        <button class="Buttons" id="DIV" onclick="Divisão()">&#247</button>
-        <button class="Buttons" onclick="Btn_7()">7</button>
-        <button class="Buttons" onclick="Btn_8()">8</button>
-        <button class="Buttons" onclick="Btn_9()">9</button>
-        <button class="Buttons" id="MUL" onclick="Multiplicação()">x</button>
-        <button class="Buttons" onclick="Btn_4()">4</button>
-        <button class="Buttons"onclick="Btn_5()">5</button>
-        <button class="Buttons" onclick="Btn_6()">6</button>
-        <button class="Buttons" id="SUB" onclick="Subtração()">-</button>
-        <button class="Buttons" onclick="Btn_1()">1</button>
-        <button class="Buttons" onclick="Btn_2()">2</button>
-        <button class="Buttons" onclick="Btn_3()">3</button>
-        <button class="Buttons" id="SOM" onclick="Soma()">+</button>
-        <button class="Buttons" onclick="DeleteONE()">&#9003</button>
-        <button class="Buttons" onclick="Btn_0()">0</button>
-        <button class="Buttons" onclick="Virgula()">,</button>
-        <button class="Buttons" id="ResoluçãoBTN" onclick="Igual()">=</button>
+        <button class="Buttons" id = "DeleteALL" onclick="DeleteALL()">C</button>
+        <button class="Buttons" id = "Parênteses" onclick="Parênteses()">( )</button>
+        <button class="Buttons" id = "Porcentagem" onclick="Porcentagem()">%</button>
+        <button class="Buttons" id = "DIV" onclick="Divisão()">&#247</button>
+        <button class="Buttons" id = "Btn_7"onclick="Btn_7()">7</button>
+        <button class="Buttons" id = "Btn_8"onclick="Btn_8()">8</button>
+        <button class="Buttons" id = "Btn_9"onclick="Btn_9()">9</button>
+        <button class="Buttons" id = "MUL" onclick="Multiplicação()">x</button>
+        <button class="Buttons" id = "Btn_4"onclick="Btn_4()">4</button>
+        <button class="Buttons" id = "Btn_5" onclick="Btn_5()">5</button>
+        <button class="Buttons" id = "Btn_6" onclick="Btn_6()">6</button>
+        <button class="Buttons" id = "SUB" onclick="Subtração()">-</button>
+        <button class="Buttons" id = "Btn_1" onclick="Btn_1()">1</button>
+        <button class="Buttons" id = "Btn_2" onclick="Btn_2()">2</button>
+        <button class="Buttons" id = "Btn_3"onclick="Btn_3()">3</button>
+        <button class="Buttons" id= "SOM" onclick="Soma()">+</button>
+        <button class="Buttons" id = "DeleteONE"onclick="DeleteONE()">&#9003</button>
+        <button class="Buttons" id = "Btn_0" onclick="Btn_0()">0</button>
+        <button class="Buttons" id = "Virgula"onclick="Virgula()">,</button>
+        <button class="Buttons" id = "ResoluçãoBTN" onclick="Igual()">=</button>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
