@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#CalculadoraDIV{
+    width: 330px;
+    height: 530px;
+    background-color: rgb(77, 74, 74);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: solid rgb(255, 181, 43) 4px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+body{
+    background-color: brown;
+}
+
+@font-face {
+    font-family: 'FonteCalculadora';
+    src: url('Calculator.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+#InputVAL{
+    width: 310px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-family:  'FonteCalculadora' ;
+    overflow: auto;
+}
+
+#Linha{
+    background-color: orange;
+    width: 1px;
+    width: 329px;
+    padding-top: 3px;
+}
+
+#InputDIV{
+ padding-bottom: 20px;
+
+}
+
+.Buttons{
+    width: 76px;
+    height: 76px;
+    border-radius: 19px;
+    font-size: 24px;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.721);
+    border: 0;
+    transition: 0.1s;
+}
+
+#DivBotões{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px; 
+    padding-top: 20px;
+}
+
+.Buttons:active {
+    background-color: orange;
+    transform: scale(0.98);
+    color: black;
+}
+
+#ResoluçãoBTN{
+    background-color: orange;
+    transform: scale(0.98);
+    color: black;
+}
+
+#ResoluçãoBTN:active {
+    width: 76px;
+    height: 76px;
+    border-radius: 19px;
+    font-size: 24px;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.721);
+    border: 0;
+    transition: 0.1s;
+}
